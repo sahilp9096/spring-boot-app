@@ -8,6 +8,6 @@ node
   stage('Compile Package')
   {
     def mvn_home = tool name: 'maven', type: 'maven'
-    sh "${maven_home}/bin/mvn"
+    sh "${mvn_home}/bin/mvn"
   }
 }
