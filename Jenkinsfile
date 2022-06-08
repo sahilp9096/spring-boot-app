@@ -2,8 +2,7 @@ node
 {
   stage('SCM Checkout')
   {
-        
-       echo "scm"
+      git ' '
   }
   stage('Compile Package')
   {
