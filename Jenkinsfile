@@ -1,6 +1,6 @@
 node
 {
-  stage('SCM Checkout')
+  Stage('SCM Checkout')
   {
         
         git branch: 'main', changelog: false, poll: false, url: 'https://github.com/sahilp9096/spring-boot-app.git'
