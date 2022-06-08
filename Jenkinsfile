@@ -2,7 +2,8 @@ node
 {
   stage('SCM Checkout')
   {
-        git 'https://github.com/sahilp9096/spring-boot-app.git'
+        
+        git branch: 'main', changelog: false, poll: false, url: 'https://github.com/sahilp9096/spring-boot-app.git'
   }
   Stage('Compile Package')
   {
