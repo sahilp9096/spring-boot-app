@@ -10,20 +10,18 @@ node
   stage('Compile Package')
   {
     
-    steps
-    {
-    def output=' '
+   
     script
     {
       environment
       {
         env.PATH = env.PATH +";c:\\Windows\\System32"
-        output = bat 'mvn spring-boot:run'
+        bat 'mvn spring-boot:run'
         
        }
     }
-    echo "${output}"
-    }
+    
+   
   }
   
 }
