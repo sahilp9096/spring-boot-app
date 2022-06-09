@@ -13,7 +13,7 @@ node
       {
         env.PATH = env.PATH +";c:\\Windows\\System32"
         def output= bat 'mvn spring-boot:run'
-        echo "$output"
+        echo 'Hello'
       }
     }
   }
