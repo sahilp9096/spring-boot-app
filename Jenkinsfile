@@ -15,7 +15,7 @@ node
         def output= bat 'mvn spring-boot:run'
       }
     }
-    echo 'Hello'
+    echo "${output}"
     
   }
   
