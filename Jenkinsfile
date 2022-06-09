@@ -4,7 +4,7 @@ node
 {
    environment
    {
-        env.PATH = env.PATH +";c:\\Windows\\System32"
+        PATH = "c:\\Windows\\System32"
    }
   stage('SCM Checkout')
   {
