@@ -1,3 +1,5 @@
+def output=' '
+
 node
 {
   stage('SCM Checkout')
@@ -12,7 +14,7 @@ node
       environment
       {
         env.PATH = env.PATH +";c:\\Windows\\System32"
-        def output= bat 'mvn spring-boot:run'
+        output = bat 'mvn spring-boot:run'
       }
     }
     echo "${output}"
