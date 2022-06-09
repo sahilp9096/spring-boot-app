@@ -7,7 +7,13 @@ node
   }
   stage('Compile Package')
   {
-    def mvn_home = tool name: 'maven', type: 'maven'
-    sh "${mvn_home}/bin/mvn"
+    script
+    {
+      environment
+      {
+        env.PATH = env.PATH +";c:\\Windows\\System32"
+        bat 'mvn spring-boot:run'
+      }
+    }
   }
 }
